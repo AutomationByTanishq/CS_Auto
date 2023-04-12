@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Login Functionality">
+    <test  name="Login Functionality : Verify User is Logged In" verbose="2">
+        <classes>
+            <class name="Tests.Compliance_Login_Tests">
+                <methods>
+                    <include name="Verify_Login_With_Valid_Compliance_Officer_Credentials"></include>
+                    <include name="Verify_Login_With_Valid_Team_Member_Credentials"></include>
+                    <include name="Verify_Login_With_Valid_Approver_Credentials"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
